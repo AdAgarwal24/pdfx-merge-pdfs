@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDFx - Merge PDFs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">PDFx</div>
+  </nav>
+
+  <section class="hero">
+    <h1 class="fade-in">Merge PDFs Instantly</h1>
+    <section class="features">
+
+  <div class="feature">
+     ⚡ Fast Processing
+  </div>
+
+  <div class="feature">
+     🔒 100% Secure
+  </div>
+
+  <div class="feature">
+     🚫 No Watermark
+  </div>
+
+  </section>
+  
+</section>
+  <div class="card slide-up">
+    <form action="/merge" method="post" enctype="multipart/form-data">
+      
+      <div class="upload-box">
+        <input type="file" name="pdfs"  id="fileInput" multiple accept=".pdf" required>
+        
+        <p id="uploadText">Drag & Drop PDFs or Click to Upload</p>
+        <span id="fileList"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="filename">Custom merged file name (optional)</label>
+        <input 
+          type="text" 
+          name="filename" 
+          id="filename" 
+          placeholder="Enter file name (without .pdf)">
+      </div>
+
+      <button type="submit" class="merge-btn">
+        Merge Now 
+      </button>
+      <div class="loader" id="loader" style="display:none;"></div>
+    </form>
+  </div>
+
+  <footer>
+    Built with by Aditi Agarwal
+  </footer>
+  <script src="/static/js/script.js"></script>
+</body>
+</html>

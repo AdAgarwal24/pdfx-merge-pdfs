@@ -1,0 +1,220 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+  background-size: 200% 200%;
+animation: gradientMove 8s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+nav {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 50px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+.features{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:40px;
+}
+
+.feature{
+  background:rgba(255,255,255,0.15);
+  padding:12px 20px;
+  border-radius:10px;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.feature:hover{
+  transform:translateY(-5px);
+}
+
+/* Glass Card */
+.card {
+  margin: 60px auto;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed white;
+  padding: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.upload-box:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.02);
+}
+
+.upload-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-box p {
+  pointer-events: none;
+}
+
+/* Button */
+.merge-btn {
+  margin-top: 30px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  background: white;
+  color: #764ba2;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.merge-btn:hover {
+  transform: translateY(-3px)scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.loader {
+  margin: 20px auto;
+  border: 4px solid rgba(255,255,255,0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  animation: spin 1s linear infinite;
+  
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+.delay {
+  animation-delay: 0.5s;
+}
+
+.slide-up {
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Form Group */
+.form-group {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+/* Placeholder color */
+.form-group input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Focus effect */
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
