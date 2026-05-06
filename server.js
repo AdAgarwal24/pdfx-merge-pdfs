@@ -5,7 +5,7 @@ const { mergePDFs } = require('./merge');
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 // Serve static files
 app.use('/static', express.static('public'));
