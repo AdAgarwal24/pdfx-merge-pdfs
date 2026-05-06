@@ -2,6 +2,9 @@
 
 A Node.js web application to merge multiple PDF files instantly.
 
+## Live Demo
+https://pdfx-merge-pdfs.onrender.com
+
 ## Features
 - Merge multiple PDFs
 - Fast processing
@@ -18,8 +21,6 @@ A Node.js web application to merge multiple PDF files instantly.
 
 ## Run Locally
 
+```bash
 npm install
-node server.js
-
-Open:
-http://localhost:4000
+npm start
