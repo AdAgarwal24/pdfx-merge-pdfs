@@ -1,26 +1,32 @@
 # PDFx – Merge PDFs
 
-A Node.js web application to merge multiple PDF files instantly.
+A web application built with Node.js and Express.js that allows users to upload and merge multiple PDF files into a single PDF document.
 
-## Live Demo
+## 🚀 Live Demo
+
 https://pdfx-merge-pdfs.onrender.com
 
-## Features
+## ✨ Features
+
 - Merge multiple PDFs
 - Fast processing
 - Secure uploads
 - No watermark
 - Modern UI
 
-## Tech Stack
+## 🛠️ Tech Stack
+
 - Node.js
 - Express.js
 - HTML
 - CSS
 - JavaScript
 
-## Run Locally
+## ▶️ Run Locally
 
-```bash
 npm install
 npm start
+
+## 📌 Author
+
+Aditi Agarwal
